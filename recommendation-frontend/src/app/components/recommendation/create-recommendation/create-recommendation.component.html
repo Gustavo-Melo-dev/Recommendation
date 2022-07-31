@@ -1,0 +1,19 @@
+<div class="content">
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" #recommendationName placeholder="Name" aria-label="Name" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" #recommendationCpf placeholder="CPF" aria-label="CPF" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" #recommendationTelephone placeholder="Telephone" aria-label="Telephone" required>
+    </div>
+    <div class="col">
+      <input type="email" class="form-control" #recommendationEmail placeholder="Email" aria-label="Email" required>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center mt-4">
+    <button type="submit" class="btn btn-success" (click)="createRecommendation(recommendationName.value, recommendationCpf.value ,recommendationTelephone.value, recommendationEmail.value); recommendationName.value=''; recommendationCpf.value=''; recommendationTelephone.value=''; recommendationEmail.value=''">Add</button>
+  </div>
+</div>

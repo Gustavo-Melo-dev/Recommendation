@@ -1,0 +1,29 @@
+<div class="table">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">CPF</th>
+        <th scope="col">Email</th>
+        <th scope="col">Situação</th>
+        <th scope="col">Deletar</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="recommendations.length">
+      <tr *ngFor="let recommendation of recommendations">
+        <td>{{recommendation.id}}</td>
+        <td>{{recommendation.name}}</td>
+        <td>{{recommendation.cpf}}</td>
+        <td>{{recommendation.email}}</td>
+        <td>
+          <span>{{recommendation.status.status}} </span>
+          <button class="btn btn-success" *ngIf="recommendation.status_id !== 3" (click)="evolutionRecommendation(recommendation.id)">Update</button>
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteRecommendation(recommendation.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
