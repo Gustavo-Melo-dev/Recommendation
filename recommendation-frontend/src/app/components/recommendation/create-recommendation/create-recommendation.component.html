@@ -1,15 +1,18 @@
 <div class="content">
-  <div class="row">
-    <div class="col">
-      <input type="text" class="form-control" #recommendationName placeholder="Name" aria-label="Name" required>
+  <div class="d-flex justify-content-center mb-4">
+    <h1>Cadastrar Recomendação</h1>
+  </div>
+  <div id="form">
+    <div class="col p-2" id="name">
+      <input type="text" class="form-control" #recommendationName placeholder="Nome" aria-label="Nome" required>
     </div>
-    <div class="col">
+    <div class="col p-2" id="cpf">
       <input type="text" class="form-control" #recommendationCpf placeholder="CPF" aria-label="CPF" required>
     </div>
-    <div class="col">
-      <input type="text" class="form-control" #recommendationTelephone placeholder="Telephone" aria-label="Telephone" required>
+    <div class="col p-2" id="telefone">
+      <input type="text" class="form-control" #recommendationTelephone placeholder="Telefone" aria-label="Telefone" required>
     </div>
-    <div class="col">
+    <div class="col p-2" id="email">
       <input type="email" class="form-control" #recommendationEmail placeholder="Email" aria-label="Email" required>
     </div>
   </div>
