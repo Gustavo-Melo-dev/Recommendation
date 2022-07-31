@@ -18,10 +18,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/recommendation/iniciado', [StatusController::class, 'iniciado']);
-Route::get('/recommendation/em-processo', [StatusController::class, 'emProcesso']);
-Route::get('/recommendation/finalizado', [StatusController::class, 'finalizado']);
-
 Route::get('/recommendations', function(){
     return RecommendationResource::collection(Recommendation::all());
 });
