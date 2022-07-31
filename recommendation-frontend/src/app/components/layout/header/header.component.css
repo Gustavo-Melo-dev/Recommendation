@@ -51,26 +51,14 @@ body,
   color: var(--white);
 }
 
+@media (max-width: 768px) {
+  #social-media {
+    display: none;
+  }
+}
+
 @media (min-width: 1280px) {
   .tabs-to-dropdown .nav-wrapper {
     padding: 15px 30px;
   }
-}
-
-
-/* FOOTER STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.page-footer {
-  position: fixed;
-  right: 15px;
-  bottom: 20px;
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  padding: 5px;
-  background: var(--white);
-}
-
-.page-footer a {
-  margin-left: 4px;
 }
